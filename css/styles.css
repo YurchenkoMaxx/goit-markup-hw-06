@@ -191,14 +191,14 @@ button {
 }
 .address-link {
   padding: 0;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #434455;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.address-link.mobile-email {
+.address-link.mobile-tel {
   color: #4d5ae5;
 }
 
@@ -414,7 +414,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 48px;
 }
 .portfolio-item {
   transition: box-shadow, 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -470,13 +470,13 @@ button {
   padding-top: 96px;
 }
 .footer-container {
-padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .foter-webstudio {
   max-width: 264px;
+  margin-bottom: 72px;
 }
 
 .logo-footer {
@@ -491,11 +491,12 @@ padding: 0;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  margin-bottom: 72px;
+
 }
 .soc-footer {
 
   max-width: 208px;
+  margin-bottom: 72px;
 }
 
 .soc-media {
@@ -514,7 +515,7 @@ padding: 0;
   justify-content: center;
   flex-direction: row;
   gap: 16px;
-  margin-bottom: 72px;
+
 }
 .soc-footer-link {
   width: 40px;
@@ -542,9 +543,7 @@ padding: 0;
   justify-content: center;
   align-items: center;
 }
-.footer-subscribe {
-  width: 288px;
-}
+
 .footer-subscribe-input {
   border: 1px solid #fff;
   border-radius: 4px;
@@ -960,8 +959,8 @@ textarea::placeholder {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: baseline;
-    gap: 24px;
-    width: 552px;
+    gap: 72px 24px;
+    width: 584px;
   }
   .logo-footer {
     justify-content: start;
@@ -972,6 +971,10 @@ textarea::placeholder {
   .footer-subscribe-title {
     justify-content: start;
   }
+  .foter-webstudio,
+  .soc-footer {
+    margin-bottom: 0;
+  }
 .footer-subscribe-form {
   display: flex;
   flex-direction: row;
@@ -979,9 +982,12 @@ textarea::placeholder {
 
   .footer-subscribe-input {
     width: 264px;
+    margin-bottom: 0;
   }
   .modal {
     width: 408px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
 
@@ -1074,17 +1080,20 @@ textarea::placeholder {
   .portfolio-item {
     width: 360px;
   }
+  .portfolio-list {
+    gap: 48px 24px;
+  }
 
   .footer {
     padding: 100px  0;
   }
   
   .footer-container {
-    padding: 0;
+    padding: 0 15px;
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    width: 1128px;
+    width: 1158px;
     gap: 0;
   }
   .foter-webstudio {
